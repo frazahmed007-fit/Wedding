@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#33260f">
+<title>Faraz Ahmad &amp; Syeda Fatima · Wedding Invitation</title>
+<meta property="og:title" content="Faraz Ahmad & Syeda Fatima · Wedding Invitation">
+<meta property="og:description" content="Baraat 12 December 2026 · Walima 13 December 2026 · Lahore">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#1d160b;--bg2:#2a2012;--g1:#a47d33;--g2:#e0b650;--g3:#ffe9a8;--g4:#fff7d6;--txt:#f3e4b5;--mute:#d2bd84;
+  --gold:linear-gradient(120deg,#b98a2e 0%,#ffe9a8 25%,#e0b650 45%,#fff9dc 55%,#d9a73e 75%,#b98a2e 100%);
+  --serif:'Cormorant Garamond','Palatino Linotype',Georgia,serif;--script:'Pinyon Script','Snell Roundhand','Brush Script MT',cursive;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;background:var(--bg);color:var(--txt);font-family:var(--serif);overflow:hidden;overscroll-behavior:none}
+body{background:radial-gradient(110% 70% at 50% 0%,#5a431a 0%,#33260f 45%,var(--bg) 100%)}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--g3);outline-offset:3px}
+.gold{background:var(--gold);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;animation:shine 9s linear infinite}
+@keyframes shine{to{background-position:-220% 0}}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+
+/* ---------- INTRO ---------- */
+#intro{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(28px,6vh,54px);background:radial-gradient(90% 70% at 50% 40%,#5a431a,#21180b);transition:opacity 1s ease,visibility 1s;padding:20px}
+#intro.gone{opacity:0;visibility:hidden}
+.bless{font-size:clamp(15px,4vw,19px);letter-spacing:.22em;text-align:center;color:var(--mute);transition:opacity .6s}
+.scene{perspective:1100px;width:min(88vw,400px);transition:transform 1s cubic-bezier(.6,0,.2,1),opacity 1s}
+.env{position:relative;width:100%;aspect-ratio:3/2;transform-style:preserve-3d;transform:rotateX(14deg);filter:drop-shadow(0 30px 40px #000)}
+.env>*{position:absolute}
+.e-back{inset:0;background:linear-gradient(160deg,#3a2c14,#1e160a);border:1px solid var(--g2);border-radius:3px}
+.e-front{inset:0;z-index:4;pointer-events:none}
+.e-front i{position:absolute;inset:0;background:linear-gradient(160deg,#47361a,#261c0d)}
+.e-front .l{clip-path:polygon(0 0,52% 52%,0 100%);}
+.e-front .r{clip-path:polygon(100% 0,48% 52%,100% 100%);background:linear-gradient(200deg,#4a381b,#261c0d)}
+.e-front .b{clip-path:polygon(0 100%,50% 46%,100% 100%);background:linear-gradient(180deg,#54411f,#2a200f)}
+.e-front svg{position:absolute;inset:0;width:100%;height:100%}
+.flap{left:0;top:0;width:100%;height:56%;transform-origin:50% 0;z-index:5;transition:transform .9s cubic-bezier(.5,0,.2,1),z-index 0s .45s;transform-style:preserve-3d}
+.flap i{position:absolute;inset:0;clip-path:polygon(0 0,100% 0,50% 100%);backface-visibility:hidden}
+.flap .f1{background:linear-gradient(180deg,#5a4520,#33260f)}
+.flap .f2{background:linear-gradient(0deg,#2a200f,#4d3b1b);transform:rotateX(180deg)}
+.seal{left:50%;top:56%;width:15%;aspect-ratio:1;translate:-50% -50%;border-radius:50%;z-index:6;background:radial-gradient(circle at 35% 30%,#fff3c4,#c9a24a 45%,#6d5220);display:grid;place-items:center;color:#2a1f08;font-family:var(--script);font-size:clamp(14px,4.4vw,22px);box-shadow:0 3px 10px #000a,inset 0 0 6px #fff6;transition:opacity .3s}
+.env.open .flap{transform:rotateX(180deg);z-index:1}
+.env.open .seal{opacity:0}
+.card{left:5%;right:5%;top:5%;bottom:5%;z-index:3;border-radius:2px;background:linear-gradient(160deg,#fff0b8,#d4aa4f 40%,#a67c2c);color:#2a1f08;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;transition:transform 1.1s cubic-bezier(.3,.7,.2,1),z-index 0s .5s;box-shadow:0 0 30px #c9a24a55}
+.card::before{content:"";position:absolute;inset:7px;border:1px solid #5b4416aa}
+.card .n{font-family:var(--script);font-size:clamp(26px,8vw,40px);line-height:1.05;opacity:0;transform:translateY(10px);transition:opacity 1s,transform 1s}
+.card .amp{font-size:clamp(14px,4vw,18px);margin:2px 0;opacity:0;transition:opacity 1s}
+.env.out .card{z-index:6;transform:translateY(-62%)}
+.env.out .card .n,.env.out .card .amp{opacity:1;transform:none}
+.env.out .card .n+.amp{transition-delay:.7s}
+.env.out .card .amp+.n{transition-delay:1.1s}
+.scene.zoom{transform:scale(1.5);opacity:0}
+.open-btn{position:relative;padding:15px 38px;border:1px solid var(--g2);letter-spacing:.28em;font-size:clamp(14px,3.8vw,17px);color:var(--g3);background:linear-gradient(180deg,#4a3818,#2c200e);box-shadow:0 0 0 4px #33260f,0 0 0 5px #e0b65088;transition:transform .3s,box-shadow .3s,opacity .5s}
+.open-btn:hover{box-shadow:0 0 0 4px #33260f,0 0 0 5px var(--g2),0 0 30px #e0b65088}
+.open-btn:active{transform:scale(.97)}
+.intro-busy .open-btn,.intro-busy .bless{opacity:0;pointer-events:none}
+
+/* ---------- MAIN ---------- */
+#main{position:fixed;inset:0;z-index:5;opacity:0;visibility:hidden;transition:opacity 1.2s ease .2s}
+#main.show{opacity:1;visibility:visible}
+.frame{position:fixed;inset:max(12px,env(safe-area-inset-top)) 12px max(12px,env(safe-area-inset-bottom));border:1px solid #e0b650cc;pointer-events:none;z-index:8}
+.frame::before{content:"";position:absolute;inset:6px;border:1px solid #c9a24a44}
+.frame i{position:absolute;width:26px;height:26px;border:2px solid var(--g2)}
+.frame i:nth-child(1){left:-1px;top:-1px;border-right:0;border-bottom:0}
+.frame i:nth-child(2){right:-1px;top:-1px;border-left:0;border-bottom:0}
+.frame i:nth-child(3){left:-1px;bottom:-1px;border-right:0;border-top:0}
+.frame i:nth-child(4){right:-1px;bottom:-1px;border-left:0;border-top:0}
+.track{display:flex;height:100%;width:400%;transition:transform .9s cubic-bezier(.65,0,.2,1);will-change:transform}
+.slide{width:25%;height:100%;overflow-y:auto;overflow-x:hidden;display:flex;touch-action:pan-y;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.slide::-webkit-scrollbar{display:none}
+.inner{margin:auto;width:100%;max-width:560px;padding:calc(52px + env(safe-area-inset-top)) 34px calc(86px + env(safe-area-inset-bottom));text-align:center;display:flex;flex-direction:column;align-items:center}
+.inner>*{opacity:0;transform:translateY(14px);transition:opacity .9s ease,transform .9s ease}
+.slide.on .inner>*{opacity:1;transform:none}
+.slide.on .inner>*:nth-child(2){transition-delay:.25s}.slide.on .inner>*:nth-child(3){transition-delay:.45s}
+.slide.on .inner>*:nth-child(4){transition-delay:.65s}.slide.on .inner>*:nth-child(5){transition-delay:.85s}
+.slide.on .inner>*:nth-child(6){transition-delay:1.05s}.slide.on .inner>*:nth-child(7){transition-delay:1.25s}
+.lead{font-size:clamp(16px,4.2vw,20px);letter-spacing:.08em;line-height:1.7;color:var(--txt);max-width:30ch}
+.lead.sm{font-size:clamp(15px,3.9vw,18px);color:var(--mute);font-style:italic}
+.names{font-family:var(--script);font-size:clamp(54px,16vw,92px);line-height:1.08;margin:18px 0 8px}
+.names .a{display:block;font-size:.5em;font-family:var(--serif);font-style:italic;margin:2px 0 -2px}
+.orn{width:min(260px,70%);height:22px;margin:16px auto;color:var(--g2)}
+.date-line{font-size:clamp(20px,5.4vw,26px);letter-spacing:.2em;margin-top:8px;font-weight:500}
+.h2{font-family:var(--script);font-size:clamp(52px,15vw,76px);line-height:1.1}
+.day{font-size:clamp(18px,4.8vw,23px);letter-spacing:.18em;margin-top:8px}
+.big-date{display:flex;align-items:center;gap:18px;margin:18px 0 10px}
+.big-date b{font-size:clamp(64px,19vw,96px);font-weight:500;line-height:1}
+.big-date span{display:block;text-align:left;font-size:clamp(17px,4.6vw,21px);letter-spacing:.16em;line-height:1.5;border-left:1px solid var(--g2);padding-left:18px}
+.time{font-size:clamp(17px,4.5vw,20px);letter-spacing:.2em;color:var(--g3)}
+.venue{font-size:clamp(23px,6.2vw,30px);font-weight:500;line-height:1.25;margin-top:4px}
+.sub{font-size:clamp(15px,4vw,18px);color:var(--mute);font-style:italic;margin-top:6px}
+.cd{display:flex;gap:10px;margin:22px 0 6px;justify-content:center}
+.cd div{width:clamp(58px,17vw,74px);padding:10px 0 8px;border:1px solid #c9a24a66;background:linear-gradient(180deg,#4a3818,#2a200e);position:relative}
+.cd div::after{content:"";position:absolute;left:3px;right:3px;top:3px;bottom:3px;border:1px solid #c9a24a22;pointer-events:none}
+.cd b{display:block;font-size:clamp(25px,7.2vw,32px);font-weight:500;color:var(--g3);font-variant-numeric:tabular-nums;line-height:1.1}
+.cd small{font-size:12px;letter-spacing:.14em;color:var(--mute)}
+.cd-msg{font-size:15px;color:var(--mute);font-style:italic;margin-bottom:6px;min-height:1em}
+.btn{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:14px 30px;border:1px solid var(--g2);color:var(--g3);letter-spacing:.2em;font-size:clamp(14px,3.8vw,16px);background:linear-gradient(180deg,#4a3818,#2c200e);transition:box-shadow .3s,transform .2s,background .3s}
+.btn svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.6}
+.btn:hover{box-shadow:0 0 26px #c9a24a55;background:linear-gradient(180deg,#5e4820,#38280f)}
+.btn:active{transform:scale(.97)}
+.btn.wa{border-color:#c9a24a;background:var(--gold);background-size:220% 100%;color:#1a1305;font-weight:600}
+.btn.wa:hover{background-position:100% 0}
+.thanks{font-size:clamp(21px,5.6vw,27px);line-height:1.5;max-width:24ch;font-style:italic;margin-top:4px}
+
+/* ---------- CONTROLS ---------- */
+.ctl{position:fixed;z-index:20;opacity:0;visibility:hidden;transition:opacity .8s 1s}
+#main.show~.ctl{opacity:1;visibility:visible}
+.top{top:calc(24px + env(safe-area-inset-top));right:26px;display:flex;gap:10px}
+.ic{width:42px;height:42px;border:1px solid #c9a24aaa;border-radius:50%;display:grid;place-items:center;background:#33260fcc;color:var(--g3);backdrop-filter:blur(6px);transition:box-shadow .3s,background .3s}
+.ic:hover{box-shadow:0 0 18px #c9a24a66}
+.ic svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+#music .off{display:none}#music.muted .on{display:none}#music.muted .off{display:block}
+#music.playing::after{content:"";position:absolute;inset:-5px;border:1px solid #c9a24a66;border-radius:50%;animation:pulse 2.4s ease-out infinite}
+#music{position:relative}
+@keyframes pulse{from{transform:scale(.9);opacity:1}to{transform:scale(1.35);opacity:0}}
+.bottom{left:0;right:0;bottom:calc(26px + env(safe-area-inset-bottom));display:flex;justify-content:center;align-items:center;gap:22px}
+.dots{display:flex;gap:12px;align-items:center}
+.dots button{width:9px;height:9px;rotate:45deg;border:1px solid var(--g2);transition:all .5s;padding:0}
+.dots button.on{background:var(--gold);width:13px;height:13px;box-shadow:0 0 12px #c9a24a99}
+.arrow{width:40px;height:40px;border:1px solid #c9a24a88;border-radius:50%;display:grid;place-items:center;color:var(--g3);background:#33260fcc;transition:opacity .4s,box-shadow .3s}
+.arrow:hover{box-shadow:0 0 16px #c9a24a66}
+.arrow svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.arrow[disabled]{opacity:.25;pointer-events:none}
+.hint{position:fixed;left:0;right:0;bottom:calc(76px + env(safe-area-inset-bottom));text-align:center;font-style:italic;font-size:14px;color:var(--mute);z-index:9;pointer-events:none;animation:hint 3s ease-in-out infinite;transition:opacity .6s}
+.hint.hide{opacity:0!important;animation:none}
+@keyframes hint{50%{transform:translateX(8px)}}
+@media(min-width:900px){.hint{display:none}.inner{padding-left:60px;padding-right:60px}}
+@media(max-height:640px){.inner{padding-top:calc(40px + env(safe-area-inset-top))}.names{font-size:clamp(44px,12vw,70px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important;transition-delay:0s!important}.gold{color:var(--g3);-webkit-text-fill-color:var(--g3);background:none}}
+</style>
+</head>
+<body>
+
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<!-- ornament symbol -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gg" x1="0" x2="1"><stop offset="0" stop-color="#8a6a2b"/><stop offset=".5" stop-color="#f3dd9b"/><stop offset="1" stop-color="#8a6a2b"/></linearGradient>
+    <symbol id="orn" viewBox="0 0 260 22">
+      <g fill="none" stroke="url(#gg)" stroke-width="1.1" stroke-linecap="round">
+        <path d="M6 11h96M158 11h96"/>
+        <path d="M102 11c8-9 16-9 20 0 4 9 12 9 16 0M158 11c-8-9-16-9-20 0-4 9-12 9-16 0" transform="translate(-0 0)"/>
+        <path d="M130 3l7 8-7 8-7-8z" fill="#c9a24a"/>
+        <circle cx="14" cy="11" r="2" fill="#c9a24a"/><circle cx="246" cy="11" r="2" fill="#c9a24a"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- INTRO -->
+<section id="intro" aria-label="Wedding invitation envelope">
+  <p class="bless gold">You are warmly invited</p>
+  <div class="scene" id="scene">
+    <div class="env" id="env">
+      <div class="e-back"></div>
+      <div class="card" aria-hidden="true">
+        <div class="n">Faraz Ahmad</div><div class="amp">&amp;</div><div class="n">Syeda Fatima</div>
+      </div>
+      <div class="e-front"><i class="l"></i><i class="r"></i><i class="b"></i></div>
+      <div class="flap"><i class="f1"></i><i class="f2"></i></div>
+      <div class="seal">F&amp;F</div>
+    </div>
+  </div>
+  <button class="open-btn" id="openBtn">OPEN INVITATION</button>
+</section>
+
+<!-- MAIN -->
+<main id="main" aria-label="Wedding invitation">
+  <div class="frame"><i></i><i></i><i></i><i></i></div>
+  <div class="track" id="track">
+
+    <!-- 1 · Invitation -->
+    <section class="slide" aria-label="Invitation">
+      <div class="inner">
+        <p class="lead sm">With the blessings of Almighty Allah and our families,<br>we joyfully invite you to celebrate the wedding of</p>
+        <h1 class="names gold"><span>Faraz Ahmad</span><span class="a">&amp;</span><span>Syeda Fatima</span></h1>
+        <svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+        <p class="lead">Two days of joy and prayers, in the heart of Lahore</p>
+        <p class="date-line gold">12 &amp; 13 DECEMBER 2026</p>
+        <p class="sub">Baraat · Walima</p>
+      </div>
+    </section>
+
+    <!-- 2 · Baraat -->
+    <section class="slide" aria-label="Baraat">
+      <div class="inner">
+        <h2 class="h2 gold">Baraat</h2>
+        <svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+        <p class="day gold">SATURDAY</p>
+        <div class="big-date"><b class="gold">12</b><span>DECEMBER<br>2026</span></div>
+        <p class="time">7:00 PM</p>
+        <p class="venue" style="margin-top:18px">Mughal-e-Azam Garden Town</p>
+        <p class="sub">Lahore, Pakistan</p>
+        <div><p class="cd-msg" data-msg="1"></p><div class="cd" data-target="2026-12-12T19:00:00+05:00"></div></div>
+        <a class="btn" href="https://maps.app.goo.gl/YqrB4DZCjGWVzFPo9?g_st=ic" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>VIEW ON MAP</a>
+      </div>
+    </section>
+
+    <!-- 3 · Walima -->
+    <section class="slide" aria-label="Walima">
+      <div class="inner">
+        <h2 class="h2 gold">Walima</h2>
+        <svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+        <p class="day gold">SUNDAY</p>
+        <div class="big-date"><b class="gold">13</b><span>DECEMBER<br>2026</span></div>
+        <p class="time">7:00 PM</p>
+        <p class="venue" style="margin-top:18px">The Grand Marquee</p>
+        <p class="sub">Barkat Market, Lahore, Pakistan<br>Landmark: Right side of Laal Qila Restaurant</p>
+        <div><p class="cd-msg" data-msg="1"></p><div class="cd" data-target="2026-12-13T19:00:00+05:00"></div></div>
+        <a class="btn" href="https://maps.app.goo.gl/x42DKswXoEdzKD4a7?g_st=ic" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>VIEW ON MAP</a>
+      </div>
+    </section>
+
+    <!-- 4 · Closing -->
+    <section class="slide" aria-label="Thank you">
+      <div class="inner">
+        <h2 class="h2 gold">Thank You</h2>
+        <svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+        <p class="thanks">Your presence and prayers will make our celebration complete.</p>
+        <h2 class="names gold" style="font-size:clamp(46px,13vw,76px);margin-top:26px"><span>Faraz Ahmad</span><span class="a">&amp;</span><span>Syeda Fatima</span></h2>
+        <p class="lead sm" style="margin-top:6px">With love and prayers from our families</p>
+        <button class="btn wa" id="share"><svg viewBox="0 0 24 24"><path d="M4 20l1.3-4.2A8 8 0 1 1 8.4 18.8z"/><path d="M9 9c.3 2.4 2.600 4.600 6 6l1.200-1.400-2-1-.8.8c-.9-.4-1.800-1.300-2.200-2.200l.8-.8-1-2z"/></svg>SHARE ON WHATSAPP</button>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- controls -->
+<div class="ctl top">
+  <button class="ic" id="music" aria-label="Turn music off" title="Music">
+    <svg class="on" viewBox="0 0 24 24"><path d="M9 18V6l10-2v12"/><circle cx="6.500" cy="18" r="2.500"/><circle cx="16.500" cy="16" r="2.500"/></svg>
+    <svg class="off" viewBox="0 0 24 24"><path d="M9 18V6l10-2v12"/><circle cx="6.500" cy="18" r="2.500"/><circle cx="16.500" cy="16" r="2.500"/><path d="M3 3l18 18"/></svg>
+  </button>
+  <button class="ic" id="shareTop" aria-label="Share on WhatsApp" title="Share"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.500"/><circle cx="6" cy="12" r="2.500"/><circle cx="18" cy="19" r="2.500"/><path d="M8.300 10.800l7.400-4.600M8.300 13.200l7.400 4.600"/></svg></button>
+</div>
+<div class="ctl bottom">
+  <button class="arrow" id="prev" aria-label="Previous page"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <div class="dots" id="dots" role="tablist" aria-label="Pages"></div>
+  <button class="arrow" id="next" aria-label="Next page"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+</div>
+<p class="hint ctl" id="hint">swipe to continue ›</p>
+
+<script>
+(function(){
+'use strict';
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ================= PARTICLES ================= */
+var cv=$('#fx'),cx=cv.getContext('2d'),P=[],W,H,raf,DPR=Math.min(window.devicePixelRatio||1,2);
+function size(){W=innerWidth;H=innerHeight;cv.width=W*DPR;cv.height=H*DPR;cx.setTransform(DPR,0,0,DPR,0,0)}
+function mk(init){return{x:Math.random()*W,y:init?Math.random()*H:H+10,r:Math.random()*1.6+.4,v:Math.random()*.35+.12,a:Math.random()*.6+.2,p:Math.random()*6.28,s:Math.random()*.02+.005}}
+function loop(){
+  cx.clearRect(0,0,W,H);
+  for(var i=0;i<P.length;i++){var o=P[i];o.y-=o.v;o.p+=o.s;o.x+=Math.sin(o.p)*.25;
+    if(o.y<-10){P[i]=mk(false);continue}
+    var al=o.a*(.55+.45*Math.sin(o.p*3));
+    var g=cx.createRadialGradient(o.x,o.y,0,o.x,o.y,o.r*5);
+    g.addColorStop(0,'rgba(255,236,170,'+al+')');g.addColorStop(1,'rgba(201,162,74,0)');
+    cx.fillStyle=g;cx.beginPath();cx.arc(o.x,o.y,o.r*5,0,6.283);cx.fill();}
+  raf=requestAnimationFrame(loop);
+}
+function startFx(){size();var n=Math.round(Math.min(60,W*H/16000));P=[];for(var i=0;i<n;i++)P.push(mk(true));
+  if(reduce){cx.clearRect(0,0,W,H);P.forEach(function(o){cx.fillStyle='rgba(243,221,155,'+o.a*.5+')';cx.beginPath();cx.arc(o.x,o.y,o.r,0,6.283);cx.fill()});return}
+  cancelAnimationFrame(raf);loop()}
+addEventListener('resize',function(){startFx()});
+startFx();
+
+/* ================= MUSIC (original, generated live with Web Audio — no audio file, no licensing) ================= */
+var ac,master,timer,step=0,nextT=0,on=false,musicBtn=$('#music');
+var CH=[ // D major · B minor · G major · A major
+  {pad:[146.83,220,293.66,369.99],arp:[293.66,369.99,440,587.33]},
+  {pad:[123.47,185,246.94,293.66],arp:[246.94,293.66,369.99,493.88]},
+  {pad:[98,146.83,196,246.94],arp:[246.94,293.66,392,493.88]},
+  {pad:[110,164.81,220,277.18],arp:[277.18,329.63,440,554.37]}
+],PAT=[0,1,2,3,2,1,3,2],STEP=.62;
+function note(f,t,dur,vol,type){
+  var o=ac.createOscillator(),g=ac.createGain();o.type=type;o.frequency.value=f;
+  g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(vol,t+(type==='sine'?.015:dur*.3));
+  g.gain.exponentialRampToValueAtTime(.0001,t+dur);o.connect(g);g.connect(master);o.start(t);o.stop(t+dur+.05);
+}
+function sched(){
+  while(nextT<ac.currentTime+1.4){
+    var c=CH[Math.floor(step/8)%4],k=step%8;
+    if(k===0)c.pad.forEach(function(f,i){note(f*(i%2?1.002:.998),nextT,STEP*8+1.2,.03,'triangle')});
+    note(c.arp[PAT[k]],nextT,2.2,.075,'sine');
+    if(k===0)note(c.arp[0]/2,nextT,3,.05,'sine');
+    nextT+=STEP;step++;
+  }
+  timer=setTimeout(sched,350);
+}
+function initAudio(){
+  var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return false;
+  ac=new AC();master=ac.createGain();master.gain.value=0;
+  var lp=ac.createBiquadFilter();lp.type='lowpass';lp.frequency.value=2400;
+  var d=ac.createDelay(1);d.delayTime.value=.46;var fb=ac.createGain();fb.gain.value=.4;
+  var wet=ac.createGain();wet.gain.value=.5;
+  master.connect(lp);lp.connect(ac.destination);lp.connect(d);d.connect(fb);fb.connect(d);d.connect(wet);wet.connect(ac.destination);
+  return true;
+}
+var A=new Audio();A.src='music.mp3';A.loop=true;A.volume=.7;A.preload='none';var fileMode=null; // optional: put your own music.mp3 next to index.html
+function musicOn(){
+  if(fileMode!==false){
+    var p;try{p=A.play()}catch(e){}
+    if(p&&p.then){p.then(function(){fileMode=true;on=true;ui()}).catch(function(){fileMode=false;synthOn()});return}
+  }
+  synthOn();
+}
+function synthOn(){
+  try{
+    if(!ac&&!initAudio())return;
+    ac.resume();clearTimeout(timer);nextT=ac.currentTime+.1;
+    master.gain.cancelScheduledValues(ac.currentTime);master.gain.setValueAtTime(master.gain.value,ac.currentTime);
+    master.gain.linearRampToValueAtTime(.55,ac.currentTime+2.5);
+    sched();on=true;ui();
+  }catch(e){}
+}
+function musicOff(){
+  if(fileMode){A.pause();on=false;ui();return}
+  if(!ac)return;on=false;ui();
+  master.gain.cancelScheduledValues(ac.currentTime);master.gain.setValueAtTime(master.gain.value,ac.currentTime);
+  master.gain.linearRampToValueAtTime(0,ac.currentTime+.7);
+  setTimeout(function(){if(!on){clearTimeout(timer);ac.suspend()}},800);
+}
+function ui(){musicBtn.classList.toggle('muted',!on);musicBtn.classList.toggle('playing',on);musicBtn.setAttribute('aria-label',on?'Turn music off':'Turn music on')}
+musicBtn.addEventListener('click',function(){on?musicOff():musicOn()});
+document.addEventListener('visibilitychange',function(){
+  if(fileMode){if(document.hidden)A.pause();else if(on)A.play().catch(function(){});return}
+  if(!ac)return;if(document.hidden){if(on)ac.suspend()}else if(on)ac.resume()});
+ui();musicBtn.classList.add('muted');
+
+/* ================= ENVELOPE ================= */
+var env=$('#env'),intro=$('#intro'),scene=$('#scene'),main=$('#main'),opened=false;
+$('#openBtn').addEventListener('click',function(){
+  if(opened)return;opened=true;intro.classList.add('intro-busy');
+  musicOn(); // user gesture: audio is allowed to start
+  var t=reduce?.2:1;
+  setTimeout(function(){env.classList.add('open')},100);
+  setTimeout(function(){env.classList.add('out')},900*t);
+  setTimeout(function(){scene.classList.add('zoom')},3300*t);
+  setTimeout(function(){intro.classList.add('gone');main.classList.add('show');go(0,true)},4000*t);
+  setTimeout(function(){intro.style.display='none'},5300*t);
+});
+
+/* ================= PAGES / SWIPE ================= */
+var track=$('#track'),slides=$$('.slide'),N=slides.length,cur=0,dots=$('#dots'),prev=$('#prev'),next=$('#next'),hint=$('#hint');
+slides.forEach(function(s,i){
+  var b=document.createElement('button');b.setAttribute('aria-label','Go to page '+(i+1));b.addEventListener('click',function(){go(i)});dots.appendChild(b)});
+function go(i,force){
+  i=Math.max(0,Math.min(N-1,i));if(i===cur&&!force)return;cur=i;
+  track.style.transform='translateX('+(-cur*100/N)+'%)';
+  slides.forEach(function(s,k){s.classList.toggle('on',k===cur);if(k===cur)s.scrollTop=0});
+  $$('button',dots).forEach(function(b,k){b.classList.toggle('on',k===cur)});
+  prev.disabled=cur===0;next.disabled=cur===N-1;
+  if(cur>0)hint.classList.add('hide');
+}
+prev.addEventListener('click',function(){go(cur-1)});next.addEventListener('click',function(){go(cur+1)});
+addEventListener('keydown',function(e){if(!main.classList.contains('show'))return;
+  if(e.key==='ArrowRight'||e.key==='PageDown')go(cur+1);else if(e.key==='ArrowLeft'||e.key==='PageUp')go(cur-1)});
+var sx=0,sy=0,st=0,tracking=false;
+main.addEventListener('touchstart',function(e){var t=e.touches[0];sx=t.clientX;sy=t.clientY;st=Date.now();tracking=true},{passive:true});
+main.addEventListener('touchend',function(e){
+  if(!tracking)return;tracking=false;var t=e.changedTouches[0],dx=t.clientX-sx,dy=t.clientY-sy;
+  if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.3&&Date.now()-st<900)go(cur+(dx<0?1:-1));
+},{passive:true});
+// mouse drag + wheel for desktop
+var md=false,mx=0,my=0;
+main.addEventListener('mousedown',function(e){md=true;mx=e.clientX;my=e.clientY});
+addEventListener('mouseup',function(e){if(!md)return;md=false;var dx=e.clientX-mx,dy=e.clientY-my;
+  if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*1.5)go(cur+(dx<0?1:-1))});
+var wl=0;main.addEventListener('wheel',function(e){
+  if(Math.abs(e.deltaX)>Math.abs(e.deltaY)&&Math.abs(e.deltaX)>30&&Date.now()-wl>900){wl=Date.now();go(cur+(e.deltaX>0?1:-1))}},{passive:true});
+
+/* ================= COUNTDOWNS ================= */
+var cds=$$('.cd').map(function(el){
+  el.innerHTML=['Days','Hours','Mins','Secs'].map(function(l){return '<div><b>00</b><small>'+l+'</small></div>'}).join('');
+  return{el:el,t:new Date(el.dataset.target).getTime(),b:$$('b',el),m:el.parentNode.querySelector('.cd-msg')};
+});
+function tick(){
+  var now=Date.now();
+  cds.forEach(function(c){
+    var d=c.t-now;
+    if(d<=0){c.b.forEach(function(b){b.textContent='00'});c.m.textContent='The celebration has begun';return}
+    var v=[Math.floor(d/864e5),Math.floor(d%864e5/36e5),Math.floor(d%36e5/6e4),Math.floor(d%6e4/1e3)];
+    c.b.forEach(function(b,i){var s=String(v[i]);b.textContent=s.length<2?'0'+s:s});
+    c.m.textContent='Counting down to the celebration';
+  });
+}
+tick();setInterval(tick,1000);
+
+/* ================= WHATSAPP SHARE ================= */
+function share(){
+  var url=location.href.split('#')[0];
+  var msg='With the blessings of Allah and our families, we invite you to the wedding of Faraz Ahmad & Syeda Fatima.\n\nBaraat: Saturday, 12 December 2026, 7:00 PM, Mughal-e-Azam Garden Town, Lahore\nWalima: Sunday, 13 December 2026, 7:00 PM, The Grand Marquee, Barkat Market, Lahore\n\nOpen your invitation: '+url;
+  window.open('https://wa.me/?text='+encodeURIComponent(msg),'_blank','noopener');
+}
+$('#share').addEventListener('click',share);$('#shareTop').addEventListener('click',share);
+})();
+</script>
+</body>
+</html>
